@@ -9,7 +9,7 @@ struct dolby_param_data {
 	__s32 be_id;
 	__s32 param_id;
 	__s32 length;
-	__s32 *data;
+	__s32 __user *data;
 };
 
 struct dolby_param_license {
@@ -53,7 +53,7 @@ struct dts_eagle_param_desc {
 	__u32 size;
 	__s32 offset;
 	__u32 device;
-} __attribute__((packed));
+} __packed;
 
 #define HWDEP_FE_BASE                   3000 /*unique base for FE hw dep nodes*/
 struct snd_pcm_mmap_fd {

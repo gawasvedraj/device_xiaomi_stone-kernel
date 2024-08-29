@@ -3,8 +3,8 @@
  * Copyright (c) 2020, The Linux Foundation. All rights reserved.
  */
 
-#ifndef _LINUX_MEM_BUF_H
-#define _LINUX_MEM_BUF_H
+#ifndef _UAPI_LINUX_MEM_BUF_H
+#define _UAPI_LINUX_MEM_BUF_H
 
 #include <linux/ioctl.h>
 #include <linux/types.h>
@@ -159,4 +159,4 @@ struct mem_buf_import_ioctl_arg {
 #define MEM_BUF_IOC_IMPORT		_IOWR(MEM_BUF_IOC_MAGIC, 2,\
 					      struct mem_buf_import_ioctl_arg)
 
-#endif /* _LINUX_MEM_BUF_H */
+#endif /* _UAPI_LINUX_MEM_BUF_H */
